@@ -1,7 +1,5 @@
-/*
 import React, { useState } from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 const HomePage: React.FC = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -31,52 +29,52 @@ const HomePage: React.FC = () => {
         />
       </Head>
 
-      <div className={styles.container}>
+      <div className="container">
         <input type="checkbox" id="flip" checked={isSignup} onChange={() => setIsSignup(!isSignup)} />
-        <div className={styles.cover}>
-          <div className={styles.front}>
+        <div className="cover">
+          <div className="front">
             <img src="/images/frontImg.jpg" alt="Front" />
-            <div className={styles.text}>
-              <span className={styles.text1}>
+            <div className="text">
+              <span className="text1">
                 Become a coder and<br />make your dreams alive
               </span>
-              <span className={styles.text2}>Code for innovation</span>
+              <span className="text2">Code for innovation</span>
             </div>
           </div>
-          <div className={styles.back}>
-            <img src="/images/backImg.jpg" alt="Back" className={styles.backImg} />
-            <div className={styles.text}>
-              <span className={styles.text1}>
+          <div className="back">
+            <img src="/images/backImg.jpg" alt="Back" className="backImg" />
+            <div className="text">
+              <span className="text1">
                 Complete miles of journey<br />with one step
               </span>
-              <span className={styles.text2}>Let's get started</span>
+              <span className="text2">Let's get started</span>
             </div>
           </div>
         </div>
 
-        <div className={styles.forms}>
-          <div className={styles.formContent}>
+        <div className="forms">
+          <div className="formContent">
           
             {!isSignup && (
-              <div className={styles.loginForm}>
-                <div className={styles.title}>Login</div>
+              <div className="loginForm">
+                <div className="title">Login</div>
                 <form onSubmit={handleLoginSubmit}>
-                  <div className={styles.inputBoxes}>
-                    <div className={styles.inputBox}>
+                  <div className="inputBoxes">
+                    <div className="inputBox">
                       <i className="fas fa-envelope" />
                       <input type="text" placeholder="Enter your email" />
                     </div>
-                    <div className={styles.inputBox}>
+                    <div className="inputBox">
                       <i className="fas fa-lock" />
                       <input type="password" placeholder="Enter your password" />
                     </div>
-                    <div className={styles.text}>
+                    <div className="text">
                       <a href="#">Forgot password?</a>
                     </div>
-                    <div className={`${styles.button} ${styles.inputBox}`}>
+                    <div className="button inputBox">
                       <input type="submit" value="Submit" />
                     </div>
-                    <div className={styles.signUpText}>
+                    <div className="signUpText">
                       Don't have an account? <label htmlFor="flip">Signup now</label>
                     </div>
                   </div>
@@ -86,26 +84,26 @@ const HomePage: React.FC = () => {
 
             
             {isSignup && (
-              <div className={styles.signupForm}>
-                <div className={styles.title}>Signup</div>
+              <div className="signupForm">
+                <div className="title">Signup</div>
                 <form onSubmit={handleSignupSubmit}>
-                  <div className={styles.inputBoxes}>
-                    <div className={styles.inputBox}>
+                  <div className="inputBoxes">
+                    <div className="inputBox">
                       <i className="fas fa-user" />
                       <input type="text" placeholder="Enter your name" />
                     </div>
-                    <div className={styles.inputBox}>
+                    <div className="inputBox">
                       <i className="fas fa-envelope" />
                       <input type="text" placeholder="Enter your email" />
                     </div>
-                    <div className={styles.inputBox}>
+                    <div className="inputBox">
                       <i className="fas fa-lock" />
                       <input type="password" placeholder="Enter your password" />
                     </div>
-                    <div className={`${styles.button} ${styles.inputBox}`}>
+                    <div className="button inputBox">
                       <input type="submit" value="Submit" />
                     </div>
-                    <div className={styles.signUpText}>
+                    <div className="signUpText">
                       Already have an account? <label htmlFor="flip">Login now</label>
                     </div>
                   </div>
@@ -120,4 +118,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-*/
